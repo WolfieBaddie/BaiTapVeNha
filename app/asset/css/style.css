@@ -1,0 +1,567 @@
+@font-face
+{
+    font-family: "Ferrum";
+    src: url('../fonts/ferrum.otf' ) format("open-type");
+}
+
+@font-face {
+    font-family: 'SilkaMono';
+    src: url('../fonts/silkamono-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/silkamono-regular-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/silkamono-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/silkamono-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
+@font-face {
+    font-family: 'Paris-2024';
+    src: url('../fonts/Paris2024-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Paris2024-Regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Paris2024-Regular.woff') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Paris2024-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+
+html,body
+{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    background: #eae9e4;
+}
+
+a
+{
+    font-size: 32px;
+    font-family: "SilkaMono";
+}
+.image-slider
+{
+    z-index: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-slide{
+    height: 95vh;
+    margin: 0 auto;
+}
+
+.slick-slide.slick-center
+{
+    transform: scale(1.025);
+    transition: transform .8s 1.4s cubic-bezier(.84, 0, .08, .99);
+}
+
+.slick-slide
+{
+    transition: transform .7s cubic-bezier(.84, 0, .08, .99);
+}
+
+ .slider-control
+{
+    
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    display: flex;
+} 
+
+ button
+{
+    color: #0f0f0f;
+    background: none;
+    padding: 12px;
+    border: 1px solid black;
+    font-size: 24px;
+    border-radius: 50%;
+    margin: .4em;
+    display: inline-block;
+}
+ 
+button:focus
+{
+    outline: none;
+}
+
+
+
+
+.text-slider-wrapper
+{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 20px;
+    height: 50%;
+    top: 25%;
+    
+}
+
+.text-slide h1{
+    color: rgba(44, 62, 80);
+    font-size: 78px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10%;
+    font-family: "Paris-2024";
+    margin-top: 200px;
+    -webkit-text-stroke: 0.25px #fff;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    float: right;
+}
+
+.blog-section
+{
+    width: 85%;
+    margin: 50px auto;
+    padding-top: 50px;
+   
+}
+.blog-col
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 150px;
+}
+.shop-section
+{
+    width: 85%;
+    margin: 20px auto;
+}
+
+.delivery-section
+{
+    width: 70%;
+    margin: 50px auto;
+    padding-top: 50px;
+}
+
+.about-section
+{
+    width: 70%;
+    margin: 50px auto;
+    padding-top: 50px;
+}
+
+.blog-section .title
+{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.delivery-section .title
+{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.about-section .title
+{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.shop-section .title
+{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.blog-section .title h2
+{
+    font-size: 64px;
+    color: #080e2c;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: "SilkaMono";
+}
+
+.shop-section .title h2
+{
+    font-size: 64px;
+    color: #080e2c;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: "SilkaMono";
+}
+
+.delivery-section .title h2
+{
+    font-size: 64px;
+    color: #080e2c;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: "SilkaMono";
+}
+
+.about-section .title h2
+{
+    font-size: 64px;
+    color: #080e2c;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: "SilkaMono";
+}
+
+.blog-section .title p
+{
+    font-family: "Paris-2024";
+    font-size: 24px;
+    color: #545454;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.shop-section .title p
+{
+    font-family: "Paris-2024";
+    font-size: 24px;
+    color: #545454;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+
+.delivery-section .title p
+{
+    font-family: "Paris-2024";
+    font-size: 24px;
+    color: #545454;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.about-section .title p
+{
+    font-family: "Paris-2024";
+    font-size: 24px;
+    color: #545454;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.shop-section .cards .card .content p
+{
+    font-size: 48px;
+    color: green;
+   font-style: italic;
+}
+
+.delivery-section .cards .card .content p
+{
+    font-size: 24px;
+    color:  #545454;
+   font-style: italic;
+}
+
+.about-section .cards .card .content p
+{
+    font-size: 24px;
+    color:  #545454;
+   font-style: italic;
+}
+
+
+
+.blog-section .cards-1
+{
+    display: grid;
+    grid-gap: 50px;
+    margin: 26px auto;
+}
+
+.blog-section .cards-1 .card{
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.blog-section .cards-2
+{
+    margin: 25px auto;
+    
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.blog-section .cards-2 .card{
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.shop-section .cards
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+.shop-section .cards .card{
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.delivery-section .cards
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+.about-section .cards
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+
+.delivery-section .cards .card{
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.about-section .cards .card{
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.image-section
+{
+    width: 100%;
+    height: auto;
+}
+
+.image-section img
+{
+    width: 100%;
+    height: auto;
+}
+
+.content
+{
+    padding: 15px 20px;
+}
+
+.content h4
+{
+    font-family: "SilkaMono";
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.content p
+{
+    font-family: "Paris-2024";
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content a
+{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 12px;
+    display: inline-block;
+    background-color: #3a706a;
+    padding: 8px 15px;
+}
+.card
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: rgba(34,49,63);
+    padding: 6px 15px;
+}
+
+.blog-section .card .posted-date
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: rgba(34,49,63);
+    padding: 6px 15px;
+}
+
+.blog-section .card .posted-date p
+{
+    font-family: "Ferrum";
+    color: #fff;
+}
+
+.shop-section .card .posted-date
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #080e2c;
+    padding: 6px 15px;
+}
+
+.shop-section .card .posted-date p
+{
+    z-index: 1;
+    font-family: "Ferrum";
+    color: #fff;
+}
+
+.delivery-section .card .posted-date
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color:  rgba(34,49,63);
+    padding: 6px 15px;
+}
+
+.delivery-section .card .posted-date p
+{
+    z-index: 1;
+    font-size: 32px;
+    font-family: "Ferrum";
+    color: #fff;
+}
+
+.about-section .card .posted-date
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color:  rgba(34,49,63);
+    padding: 6px 15px;
+}
+
+.about-section .card .posted-date p
+{
+    z-index: 1;
+    font-size: 32px;
+    font-family: "Ferrum";
+    color: #fff;
+}
+
+.delivery-section .cards .card .content p{
+    color: #fff;
+}
+
+.about-section .cards .card .content p{
+    color: #fff;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a{
+    font-size: 27px;
+    margin: 0.5rem;
+}
+
+.social a .bx{
+    padding: 5px;
+    color: #fff;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.social a .bx:hover{
+    background: var(--main-color);
+}
+.links{
+    margin: 1rem 0 1rem;
+}
+
+.links a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1rem;
+}
+.links a:hover{
+    color: var(--main-color);
+}
+.contact p{
+    text-align: center;
+}
+
+section{
+    display: block;
+    padding: 50px 20%;
+  }
+
+@media screen and (max-width: 992px)
+{
+    .cards
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    nav
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 364px)
+{
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    p{
+        
+        font-size: 12px;
+    }
+}

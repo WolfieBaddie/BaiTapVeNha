@@ -1,0 +1,97 @@
+@font-face
+{
+    font-family: "Ferrum";
+    src : url('./fonts/ferrum.otf') format('opentype');
+}
+
+nav {
+    float: right !important;
+}
+nav li {
+    display: inline-block;
+    margin-right: 1em; /* Add some margin between links */
+  }
+
+nav ul {
+    list-style: none; /* Remove default list style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em; /* Add some padding */
+  }
+  
+
+.rolling-text
+{
+    z-index: 2 !important;
+    top: 50%;
+    display: inline-block;
+    font-family: "Ferrum", sans-serif;
+    font-size: 32px;
+    line-height: 100px;
+    height: 100px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #080e2c;
+}
+
+.rolling-text:hover .letter,
+.rolling-text.play
+{
+    transform: translateY(-100%);
+}
+
+.rolling-text .block:last-child
+{
+    color: #c93d4b;
+}
+
+.rolling-text .letter
+{
+    display: inline-block;
+    transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.letter:nth-child(1)
+{
+    transition-delay: 0s;
+}
+
+.letter:nth-child(2)
+{
+    transition-delay: 0.015s;
+}
+
+.letter:nth-child(3)
+{
+    transition-delay: 0.03s;
+}
+.letter:nth-child(4)
+{
+    transition-delay: 0.045s;
+}
+.letter:nth-child(5)
+{
+    transition-delay: 0.06s;
+}
+.letter:nth-child(6)
+{
+    transition-delay: 0.075s;
+}
+.letter:nth-child(7)
+{
+    transition-delay: 0.09s;
+}
+
+.letter:nth-child(8)
+{
+    transition-delay: 0.105s;
+}
+
+.letter:nth-child(9)
+{
+    transition: 0.125s;
+}
